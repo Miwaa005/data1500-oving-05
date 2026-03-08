@@ -46,4 +46,8 @@ SELECT MIN(Bonus) FROM Ansatt;
 
 -- Oppgave 6
 -- 6.2
+SELECT * FROM Ordre WHERE ErBetalt IS UNKNOWN;
+SELECT * FROM Ansatt WHERE Bonus IS NULL OR Bonus < 6000;
+SELECT COUNT(*) FROM Kunde WHERE Telefon != '41234567' OR Telefon IS NULL;
+SELECT * FROM Ordre WHERE ErBetalt = TRUE AND SendtDato IS NULL;
 

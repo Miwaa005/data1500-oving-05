@@ -101,25 +101,25 @@ Forklar resultatet av følgende SQL-spørringer. Hvorfor returnerer de det de gj
     SELECT COUNT(*) FROM Ordre WHERE ErBetalt = TRUE;
     ```
     **Forklaring:**
-    *   *... Skriv din forklaring her ...*
+    * Teller antall rader i Ordre-tabellen hvor ErBetalt er true, ikke false eller NULL siden NULL gir verdien unknown.
 
 2.  **Spørring:**
     ```sql
     SELECT COUNT(*) FROM Ordre WHERE ErBetalt = FALSE;
     ```
     **Forklaring:**
-    *   *... Skriv din forklaring her ...*
+    * Teller antall rader fra Ordre-tabellen hvor ErBetalt er false, ikke true eller null
 
 3.  **Spørring:**
     ```sql
     SELECT COUNT(*) FROM Ordre WHERE ErBetalt = TRUE OR ErBetalt = FALSE;
     ```
     **Forklaring:**
-    *   *... Skriv din forklaring her ...*
+    * Teller antall rader i Ordre-tabellen hvor ErBetalt enten er true eller false, men ikke null/unknown.
 
 4.  **Spørring:**
     ```sql
     SELECT COUNT(*) FROM Ordre WHERE ErBetalt IS UNKNOWN;
     ```
     **Forklaring:**
-    *   *... Skriv din forklaring her ...*
+    * Teller antall rader i Ordre-tabellen hvor ErBetalt er NULL/unknown, ikke true eller false.
